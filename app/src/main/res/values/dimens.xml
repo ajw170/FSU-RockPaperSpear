@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="textView_padding">12dp</dimen>
+    <dimen name="header_text_size">22sp</dimen>
+    <dimen name="playerTitleMargin">6dp</dimen>
+    <dimen name="option_text_size">18sp</dimen>
+    <dimen name="player_text_size">16sp</dimen>
+    <dimen name="option_margin">5dp</dimen>
+    <dimen name="button_width">100dp</dimen>
+    <dimen name="button_margin_side">90dp</dimen>
+    <dimen name="scoreboard_text_size">18dp</dimen>
+</resources>

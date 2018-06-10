@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Rock Paper Spear</string>
+    <string name="header_title">Rock Paper Spear</string>
+    <string name="player_indicator">Player vs. Computer</string>
+    <string name="radio_option_1">Rock</string>
+    <string name="radio_option_2">Paper</string>
+    <string name="radio_option_3">Spear</string>
+    <string name="inital_status">Please choose an option!</string>
+    <string name="button_text_choose">Submit Choice</string>
+    <string name="button_reset">Reset Game</string>
+    <string name="game_scoreboard_title">Game Scoreboard</string>
+    <string name="player_score_descriptor">Player Score:</string>
+    <string name="computer_score_descriptor">Computer Score:</string>
+    <string name="score_initial">0</string>
+    <string name="wait_descriptor_test">Waiting for Game to Begin!</string>
+    <string name="player_win_indicate_text">You win!</string>
+    <string name="computer_choice">The computer chose</string>
+    <string name="rock_choice">rock</string>
+    <string name="paper_choice">paper</string>
+    <string name="spear_choice">spear</string>
+    <string name="player_lose_indicate_text">Sorry, you lost!</string>
+    <string name="select_choice_error">Please make a choice!</string>
+    <string name="game_draw">It\'s a draw!</string>
+    <string name="play_again_choice">Play Again</string>
+</resources>

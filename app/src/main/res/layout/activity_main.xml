@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7ccc8"
+    android:columnCount="2"
+    android:paddingBottom="@dimen/activity_margin"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingTop="@dimen/activity_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:padding="@dimen/textView_padding"
+        android:text="@string/header_title"
+        android:textAlignment="center"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="@dimen/header_text_size" />
+
+    <TextView
+        android:id="@+id/playerIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="@dimen/playerTitleMargin"
+        android:layout_marginTop="@dimen/playerTitleMargin"
+        android:layout_row="1"
+        android:text="@string/player_indicator"
+        android:textAlignment="center"
+        android:textSize="@dimen/player_text_size" />
+
+    <RadioGroup
+        android:id="@+id/optionGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="2"
+        android:paddingBottom="@dimen/playerTitleMargin"
+        android:paddingTop="@dimen/playerTitleMargin">
+
+        <RadioButton
+            android:id="@+id/rockOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:width="@dimen/button_width"
+            android:text="@string/radio_option_1"
+            android:textSize="@dimen/option_text_size" />
+
+        <RadioButton
+            android:id="@+id/paperOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:width="@dimen/button_width"
+            android:text="@string/radio_option_2"
+            android:textSize="@dimen/option_text_size" />
+
+        <RadioButton
+            android:id="@+id/spearOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:width="@dimen/button_width"
+            android:text="@string/radio_option_3"
+            android:textSize="@dimen/option_text_size" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/statusIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="@dimen/playerTitleMargin"
+        android:layout_marginTop="@dimen/playerTitleMargin"
+        android:text="@string/inital_status"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/submitChoiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="@dimen/playerTitleMargin"
+        android:layout_marginLeft="@dimen/button_margin_side"
+        android:layout_marginRight="@dimen/button_margin_side"
+        android:layout_marginTop="@dimen/playerTitleMargin"
+        android:text="@string/button_text_choose" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="@dimen/playerTitleMargin"
+        android:layout_marginLeft="@dimen/button_margin_side"
+        android:layout_marginRight="@dimen/button_margin_side"
+        android:layout_marginTop="@dimen/playerTitleMargin"
+        android:text="@string/button_reset" />
+
+    <TextView
+        android:id="@+id/gameScoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="@dimen/playerTitleMargin"
+        android:layout_marginTop="@dimen/playerTitleMargin"
+        android:text="@string/game_scoreboard_title"
+        android:textAlignment="center"
+        android:textSize="@dimen/scoreboard_text_size" />
+
+    <TextView
+        android:id="@+id/playerScore_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="@dimen/playerTitleMargin"
+        android:layout_marginBottom="@dimen/playerTitleMargin"
+        android:layout_marginTop="@dimen/playerTitleMargin"
+        android:text="@string/player_score_descriptor"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/playerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/playerTitleMargin"
+        android:text="@string/score_initial"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/computerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/playerTitleMargin"
+        android:text="@string/score_initial"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/computerScore_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="@dimen/playerTitleMargin"
+        android:layout_marginBottom="@dimen/playerTitleMargin"
+        android:layout_marginTop="@dimen/playerTitleMargin"
+        android:text="@string/computer_score_descriptor"
+        android:textAlignment="textEnd" />
+</GridLayout>
